@@ -1,6 +1,6 @@
 ### Next.js ###
 
-# ##🧑‍🏫 Step 1: What is Next.js?##
+**🧑‍🏫 Step 1: What is Next.js?**
 
   . React is just a library. It only cares about components.
   . Next.js is a framework built on React that solves the stuff you need to actually ship a full app:
@@ -61,7 +61,7 @@ Example:-
 
   export default function UserPage(){
      const router = useRouter();
-     return <h1>User ID: {router.query.id}</h1>;
+     <!-- return <h1>User ID: {router.query.id}</h1>; -->
   }
   
 
@@ -77,7 +77,7 @@ In pages/api/hello.js:
   . → you get JSON.
     This is like having a mini backend (good for chat, login, etc.).
 
-### step 6 :- Server-Side Rendering(SSR) ###
+### ⚡ step 6 :- Server-Side Rendering(SSR) ###
 
   Use getServerSideProps if you want data fetched at request time.
 
@@ -90,7 +90,7 @@ In pages/api/hello.js:
   }
 
   export default function SSRPage({ post }){
-      return <div><h1>{post.title}</h1><p>{post.body}</p></div>;
+      <!-- return <div><h1>{post.title}</h1><p>{post.body}</p></div>; -->
   }
 
   Visiting /ssr → the HTML is generated on the server before sending to browser (great for SEO).
@@ -109,14 +109,14 @@ export async function getStaticProps() {
 }
 
 export default function StaticPage({ post }) {
-  return <div><h1>{post.title}</h1><p>{post.body}</p></div>;
+  <!-- return <div><h1>{post.title}</h1><p>{post.body}</p></div>; -->
 }
 
 
 The page is built once at build time → super fast.
 
 
-### step 8: Deployment ###
+### 🎯 step 8: Deployment ###
 Next.js apps are production-ready and easiest to deploy on Vercel (the company that made Next.js).
 
 just run:
